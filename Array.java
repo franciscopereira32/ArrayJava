@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.Collections;
 import javax.swing.JOptionPane;
 
 public class Array{
@@ -12,6 +12,8 @@ public class Array{
             time.nome = JOptionPane.showInputDialog("Digite o nome do time" );    
             listaTimes.add(time);
         }
+        Collections.shuffle(listaTimes);
+        
         JOptionPane.showMessageDialog(null, listaTimes);
         System.out.println(listaTimes);
         
